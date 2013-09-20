@@ -1,0 +1,68 @@
+; Star Pusher (Sokoban clone)
+; http://inventwithpython.com/blog
+; By Al Sweigart al@inventwithpython.com
+;
+; Everything after the ; is a comment and will be ignored by the game that
+; reads in this file.
+;
+; The format is described at:
+; http://sokobano.de/wiki/index.php?title=Level_format
+;   @ - The starting position of the player.
+;   $ - The starting position for a pushable star.
+;   . - A goal where a star needs to be pushed.
+;   + - Player & goal
+;   * - Star & goal
+;  (space) - an empty open space.
+;   # - A wall.
+;
+; Level maps are separated by a blank line (I like to use a ; at the start
+; of the line since it is more visible.)
+;
+; I tried to use the same format as other people use for their Sokoban games,
+; so that loading new levels is easy. Just place the levels in a text file
+; and name it "starPusherLevels.txt" (after renaming this file, of course).
+
+
+; Starting demo level:
+ ########
+##      #
+#   .   #
+#   $   #
+# .$@$. #
+####$   #
+   #.   #
+   #   ##
+   #####
+;
+;
+;
+; These Sokoban levels come from David W. Skinner, who has many more puzzles at:
+; http://users.bentonrea.com/~sasquatch/sokoban/
+
+; Sasquatch Set I
+
+; 1
+
+   ###
+  ## # ####
+ ##  ###  #
+## $      #
+#   @$ #  #
+### $###  #
+  #  #..  #
+ ## ##.# ##
+ #       #
+ #     ##
+ #######
+
+; 2
+
+ ## #####
+## ## . #
+# ## $. #
+ ## $   #
+## $@ ###
+# $  ##
+#.. ## ##
+#   # ##
+##### #
